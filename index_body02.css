@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(239, 251, 255);
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    min-height: 40vh;
+}
+
+selection{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+article{
+    flex: 2;
+}
+
+aside{
+    flex: 2;
+}
+
+#margen{
+    margin: 30px;
+}
+
+.btn{
+    margin: 15px;
+    border: none; 
+    color: white; 
+    padding: 70px 100px; 
+    cursor: pointer; 
+    border-radius: 25px;
+    width: 300px; 
+    font-size: 30px;
+}
+.logica{
+    background-color: #007bff;
+} 
+.logica:hover{
+    background: #0b7dda;
+}
+  
+.html{
+    background-color: #04AA6D;
+} 
+.html:hover{
+    background-color: #46a049;
+}
+  
+.css{
+    background-color: #ff9800;
+} 
+.css:hover{
+    background: #e68a00;
+}
+  
+.js{
+    background-color: #f44336;
+    padding: 70px 40px; 
+} 
+.js:hover{
+    background: #da190b;
+}
+
+@media only screen and (max-width: 600px) {
+    .mob{
+        display: none;
+    }
+}
