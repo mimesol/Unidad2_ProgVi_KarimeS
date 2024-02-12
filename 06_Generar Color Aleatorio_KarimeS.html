@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=derice-width, inicial-scale=1.0">
+        <title>Generar Color Aleatorio</title>
+    </head>
+    <body>
+        <div>
+            <script>
+            //Funciones
+            function GenerarColorAleatorio(){
+                let letras = "0123456789ABCDEF"
+                let color = "#"
+                for(let i=0; i<6; i++){
+                    color += letras[Math.floor(Math.random()*16)]
+                }
+                return color
+            }
+
+            function CambiarBackgroundColor(){
+                document.body.style.backgroundColor = GenerarColorAleatorio()
+            }
+
+            setInterval(CambiarBackgroundColor,1000)
+        </script>
+        </div>
+    </body>
+</html>
