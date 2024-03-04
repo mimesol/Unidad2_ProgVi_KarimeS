@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=derice-width, inicial-scale=1.0">
+        <title>Personajes: Sanrio</title>
+        <link rel="stylesheet" href="index_body03.css">
+
+        <style>
+            .container{
+                text-align: center;
+            }
+            .opciones{
+                background-color: rgb(141, 187, 202);
+                width: 500px;
+                margin: 0 auto;
+            }
+
+            .btn{
+                width: 100px;
+                height: 100px;
+                border: none; 
+                color: white;  
+                cursor: pointer; 
+                border-radius: 50%;
+            }
+            .boton{
+                background-color: #007bff;
+            } 
+            .boton:hover{
+                background: #0b7dda;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <selection>
+                <article>
+                    <div>
+                        <br>
+                        <br>
+                        <h1 id="cambiar-tit">
+                            Cinnamoroll
+                        </h1>
+                        <p id="cambiar-hb">
+                            Cumpleaños: 6 de Marzo
+                        </p>
+                        <br>
+                        <p id="cambiar-p">
+                            El Cinnamoroll es un cachorro blanco que parece una nube suave. 
+                            Tiene la cola enroscada como una torta de canela (cinnamon roll) y 
+                            puede volar moviendo sus enormes orejas. Es la mascota oficial de Café Cinnamon y 
+                            disfruta de la siesta en el regazo de los clientes.
+                        </p>
+                        
+                    </div>
+                </article>
+                <aside>
+                    <div>
+                        <center>
+                            <img id="cambiar-img" src="Cinnamoroll.png" width="400px">
+                        </center>
+                        
+                    </div>
+                </aside>
+            </selection>
+            <div class="opciones">
+                <center>
+                    <button class="btn boton" onclick="cambiarCinn()"><img src="Cinnamoroll.png" width="82px"></button>
+                    <button class="btn boton" onclick="cambiarHK()"><img src="HelloKitty.png" width="60px"></button>
+                    <button class="btn boton" onclick="cambiarP()"><img src="Pompompurin.png" width="70px"></button>
+                    <button class="btn boton" onclick="cambiarBM()"><img src="BadtzMaru.png" width="50px"></button>
+                </center>
+                
+            </div>
+        </div>
+        <script>
+
+            function cambiarCinn(){
+                document.getElementById("cambiar-img").src = "Cinnamoroll.png"
+                document.getElementById('cambiar-tit').innerHTML = 'Cinnamoroll';
+                document.getElementById('cambiar-hb').innerHTML = 'Cumpleaños: 6 de Marzo';
+                document.getElementById('cambiar-p').innerHTML = 'El Cinnamoroll es un cachorro blanco que parece una nube suave. Tiene la cola enroscada como una torta de canela (cinnamon roll) y puede volar moviendo sus enormes orejas. Es la mascota oficial de Café Cinnamon y disfruta de la siesta en el regazo de los clientes.';
+            }
+
+            function cambiarHK(){
+                document.getElementById("cambiar-img").src = "HelloKitty.png"
+                document.getElementById('cambiar-tit').innerHTML = 'Hello Kitty';
+                document.getElementById('cambiar-hb').innerHTML = 'Cumpleaños: 1° de Noviembre';
+                document.getElementById('cambiar-p').innerHTML = 'Hello Kitty es una niña alegre y divertida a la que le encanta difundir alegría por todo el mundo. Vive con sus padres y su hermana gemela, Mimmy, en Londres, Inglaterra. Su lema es: "¡Nunca está demás tener muchos amigos!" Por lo tanto, siempre está rodeada de amigos y le encanta hacer nuevas amistades.';
+            }
+
+            function cambiarP(){
+                document.getElementById("cambiar-img").src = "Pompompurin.png"
+                document.getElementById('cambiar-tit').innerHTML = 'Pompompurin';
+                document.getElementById('cambiar-hb').innerHTML = 'Cumpleaños: 16 de Abril';
+                document.getElementById('cambiar-p').innerHTML = 'Pompompurin es un cachorrito de Golden Retriever tranquilo que tiene un gran talento para la siesta. Le encanta la frase "vamos a salir" tanto como odia la palabra "quédate". Es amigo de todos los que se encuentra por el camino y sueña con ser realmente grande. Su afición es coleccionar los zapatos de sus dueños y tiene su propio escondite secreto.';
+            }
+
+            function cambiarBM(){
+                document.getElementById("cambiar-img").src = "BadtzMaru.png"
+                document.getElementById('cambiar-tit').innerHTML = 'Badtz Maru';
+                document.getElementById('cambiar-hb').innerHTML = 'Cumpleaños: 1º de Abril';
+                document.getElementById('cambiar-p').innerHTML = 'Badtz-Maru es un pingüino muy radical, que disfruta su vida con buen humor en Gorgeoustown. Llama mucho la atención cuando camina con su mascota, el cocodrilo Pochi. Y también toca el violín y el piano, pero solo trata de fingir, porque no es muy bueno en eso.';
+            }
+            
+        </script>
+    </body>
+</html>

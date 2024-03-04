@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport"
+            content="width=derice-width, inicial-scale=1.0">
+            <title>Abre aleatoriamente una imagen bocho</title>
+    </head>
+<body onload="cambiarBocho()">
+    <div id="contenedor-imagen">
+        <img id="cambiar-img">
+    </div>
+    <script>
+        var bochos=[
+            'bocho_amarillo.jpg','bocho_azul.jpg','bocho_blanco.jpg','bocho_rojo.jpg'];
+        function cambiarBocho() {
+            var bocho = document.getElementById('cambiar-img');
+            var bochoRandom = bochos[Math.floor(Math.random() * bochos.length)];
+            bocho.src = bochoRandom;
+        }
+    </script>
+</body>
+</html>

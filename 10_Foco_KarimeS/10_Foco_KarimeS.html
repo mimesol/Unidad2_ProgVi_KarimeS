@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=derice-width, inicial-scale=1.0">
+        <title>
+            Foco ON/OFF
+        </title>
+        <style>
+            .container{
+                text-align: center;
+            }
+            .color-opcion{
+                width: 50px;
+                height: 50px;
+                background-color: aqua;
+                border-radius: 50%;
+                display: inline-block;
+                cursor: pointer;
+            }
+            #Boton_F{
+                width: 100px;
+                height: 100px;
+                border: none; 
+                color: black;  
+                cursor: pointer; 
+                border-radius: 50%;
+                background: gray;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img id="Foco" src="Foco_Apagado.jpg">
+        </div>
+        <div>
+            <center>
+                <br>
+                <button id="Boton_F" class="Encender">Encendedor</button>
+            </center>
+        </div>
+        <script>
+            const botonFoco = document.getElementById('Boton_F');
+            const imagenFoco = document.getElementById('Foco');
+            
+            function cambiarFoco(){
+                if(imagenFoco.src.endsWith('Foco_Apagado.jpg')){
+                    imagenFoco.src = 'Foco_Encendido.jpg';
+                    botonFoco.textContent = 'Apagar';
+                    botonFoco.classList.remove('Encender');
+                    botonFoco.style.backgroundColor = 'yellow';
+                }else{
+                    imagenFoco.src = 'Foco_Apagado.jpg';
+                    botonFoco.textContent = 'Encender';
+                    botonFoco.classList.add('Apagar');
+                    botonFoco.style.backgroundColor = 'grey';
+                }
+            } 
+            botonFoco.addEventListener('click',cambiarFoco);
+        </script>
+    </body>
+</html>

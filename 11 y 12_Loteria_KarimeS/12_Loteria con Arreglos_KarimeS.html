@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=derice-width, inicial-scale=1.0">
+        <title>CARTAS DE LOTERIA</title>
+        <link rel="stylesheet" href="index_body03.css">
+
+        <style>
+            .btn{
+                width: 100px;
+                height: 100px;
+                border: none; 
+                color: white;  
+                cursor: pointer; 
+                border-radius: 50%;
+                background-color: #007bff;
+            }
+            .btn:hover{
+                background: #3b6898;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <selection>
+                <article>
+                    <div>
+                        <br>
+                        <br>
+                        <br><br><br><br><br>
+                        <h1 id="cambiar-tit">
+                            Cartas de LOTERIA
+                        </h1>
+                        <div>
+                            <center>
+                                <button class="btn" onclick="cambiarCarta()">Generar nueva carta</button>
+                            </center>
+                        </div>
+                    </div>
+                </article>
+                <aside>
+                    <div>
+                        <center>
+                            <img id="cambiar-carta">
+                        </center>
+                        
+                    </div>
+                </aside>
+            </selection>
+            
+        </div>
+        <script>
+            function cambiarCarta(){
+                var cartas = [
+                    'Loteria Mexicana - Cartas_001.png',
+                    'Loteria Mexicana - Cartas_002.png',
+                    'Loteria Mexicana - Cartas_003.png',
+                    'Loteria Mexicana - Cartas_004.png',
+                    'Loteria Mexicana - Cartas_005.png',
+                    'Loteria Mexicana - Cartas_006.png',
+                    'Loteria Mexicana - Cartas_007.png',
+                    'Loteria Mexicana - Cartas_008.png',
+                    'Loteria Mexicana - Cartas_009.png',
+                    'Loteria Mexicana - Cartas_010.png',
+                    'Loteria Mexicana - Cartas_011.png',
+                    'Loteria Mexicana - Cartas_012.png',
+                    'Loteria Mexicana - Cartas_013.png',
+                    'Loteria Mexicana - Cartas_014.png',
+                    'Loteria Mexicana - Cartas_015.png',
+                    'Loteria Mexicana - Cartas_016.png',
+                    'Loteria Mexicana - Cartas_017.png',
+                    'Loteria Mexicana - Cartas_018.png',
+                    'Loteria Mexicana - Cartas_019.png',
+                    'Loteria Mexicana - Cartas_020.png',
+                    'Loteria Mexicana - Cartas_021.png',
+                    'Loteria Mexicana - Cartas_022.png',
+                    'Loteria Mexicana - Cartas_023.png',
+                    'Loteria Mexicana - Cartas_024.png',
+                    'Loteria Mexicana - Cartas_025.png',
+                    'Loteria Mexicana - Cartas_026.png',
+                    'Loteria Mexicana - Cartas_027.png',
+                    'Loteria Mexicana - Cartas_028.png',
+                    'Loteria Mexicana - Cartas_029.png',
+                    'Loteria Mexicana - Cartas_030.png',
+                    'Loteria Mexicana - Cartas_031.png',
+                    'Loteria Mexicana - Cartas_032.png',
+                    'Loteria Mexicana - Cartas_033.png',
+                    'Loteria Mexicana - Cartas_034.png',
+                    'Loteria Mexicana - Cartas_035.png',
+                    'Loteria Mexicana - Cartas_036.png',
+                    'Loteria Mexicana - Cartas_037.png',
+                    'Loteria Mexicana - Cartas_038.png',
+                    'Loteria Mexicana - Cartas_039.png',
+                    'Loteria Mexicana - Cartas_040.png',
+                    'Loteria Mexicana - Cartas_041.png',
+                    'Loteria Mexicana - Cartas_042.png',
+                    'Loteria Mexicana - Cartas_043.png',
+                    'Loteria Mexicana - Cartas_044.png',
+                    'Loteria Mexicana - Cartas_045.png',
+                    'Loteria Mexicana - Cartas_046.png',
+                    'Loteria Mexicana - Cartas_047.png',
+                    'Loteria Mexicana - Cartas_048.png',
+                    'Loteria Mexicana - Cartas_049.png',
+                    'Loteria Mexicana - Cartas_050.png',
+                    'Loteria Mexicana - Cartas_051.png',
+                    'Loteria Mexicana - Cartas_052.png',
+                    'Loteria Mexicana - Cartas_053.png',
+                    'Loteria Mexicana - Cartas_054.png',
+                ];
+                var carta1 = document.getElementById('cambiar-carta');
+                var randomCARTAS = cartas[Math.floor(Math.random() * cartas.length)];
+                carta1.src = randomCARTAS;
+            }
+        </script>
+    </body>
+</html>

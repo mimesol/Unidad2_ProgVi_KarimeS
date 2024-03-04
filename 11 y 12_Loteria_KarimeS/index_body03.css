@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(239, 251, 255);
+    margin: 250;
+    padding: 100;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    min-height: 40vh;
+}
+
+selection{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+article{
+    flex: 2;
+}
+
+aside{
+    flex: 2;
+}
+
+h1{
+    color: cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+}
+
